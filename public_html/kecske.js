@@ -7,7 +7,11 @@ function $(nev) {
     return document.querySelectorAll(nev);
 }
 function init() {
+
 for (var i = 0; i < $("aside img").length; i++) {
+    $("#csonak div").style.backgroundImage ="kepek/csonak.png";
+    }for (var i = 0; i < $("aside img").length; i++) {
+
         $("aside img")[i].addEventListener("click", feladat1);
     }
     for (var i = 0; i < $("aside img").length; i++) {
@@ -40,4 +44,3 @@ function feladat2() {
         
     }
 }
-

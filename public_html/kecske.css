@@ -26,17 +26,19 @@ header {
 
 #bal {
     grid-area: b;
-    height: 350px;
+    height: 400px;
 }
 
 #csonak {
     grid-area: c;
-    height: 350px;
+    height: 400px;
+    width: 600px;
+    text-align: center;
 }
 
 #jobb {
     grid-area: j;
-    height: 350px;
+    height: 400px;
 }
 
 footer {
@@ -48,6 +50,7 @@ footer p {
     background-color: #99ccff;
 }
 
+
 img {
     width: 50px;
 }
@@ -55,3 +58,13 @@ img {
      border: 2px solid red;
      cursor: grab;
 }
+
+#bal img {
+    width: 80px;
+}
+
+#csonak img {
+    width: 400px;
+}
+
+
