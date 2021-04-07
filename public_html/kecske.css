@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+header h1 {
+    text-align: center;
+}
+
+main, aside, article, header, footer {
+    border: 1px solid gray;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    
+    display: grid;
+    grid-template-areas:
+        "h h h"
+        "b c j"
+        "f f f";
+    grid-gap: 10px;
+}
+
+header {
+    grid-area: h;
+}
+
+#bal {
+    grid-area: b;
+    height: 350px;
+}
+
+#csonak {
+    grid-area: c;
+    height: 350px;
+}
+
+#jobb {
+    grid-area: j;
+    height: 350px;
+}
+
+footer {
+    grid-area: f;
+    text-align: center;
+}
+
+footer p {
+    background-color: #99ccff;
+}
+
+img {
+    width: 50px;
+}
