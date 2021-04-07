@@ -9,7 +9,7 @@ function $(nev) {
 }
 
 function init() {
-    $("#csonak div").style.backgoundImage ="kepek/csonak.png";
+    $("#csonak div").style.backgroundImage ="kepek/csonak.png";
     for (var i = 0; i < $("aside img").length; i++) {
         $("aside img")[i].addEventListener("click", feladat1);
     }
