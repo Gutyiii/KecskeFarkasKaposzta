@@ -8,14 +8,19 @@ function $(nev) {
 }
 function init() {
 
+
 for (var i = 0; i < $("aside img").length; i++) {
     $("#csonak div").style.backgroundImage ="kepek/csonak.png";
-    }for (var i = 0; i < $("aside img").length; i++) {
+    }
+
+
+    for (var i = 0; i < $("aside img").length; i++) {
 
         $("aside img")[i].addEventListener("click", feladat1);
     }
     for (var i = 0; i < $("aside img").length; i++) {
-        $("aside img")[i].addEventListener("click", feladat2);
+        $("img")[i].addEventListener("click", kepEltuntetesInnen);
+        $("img")[i].addEventListener("click", kepEltunteteseCsonakbol);
     }
     
     for (var i = 0; i < $("#tartalom1 div p").length; i++) {
@@ -30,17 +35,26 @@ function feladat6(){
     this.classlist.remove("kiemel");
 }
 
+
    
 var tomb = {};
 
+
 function feladat1() {
+    var tomb = {};
     tomb.push(this.src);
     consol.log(tomb);
 }
 
-function feladat2() {
-    display:none;
+function kepEltuntetesInnen() {
     for (var i = 0; i < max; i++) {
-        
+        this.style.add("display:none");
+        ("article img").style.remove("display:none")
     }
 }
+
+
+function kepEltunteteseCsonakbol() {
+    
+}
+
