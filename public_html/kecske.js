@@ -56,7 +56,9 @@ function feladat1() {
 
 function kepEltuntetesInnen() {
 var kep=this.src;
-    $("#jobb")[0].create("<img src="+kep+">");
+$("article")[0].innerHTML +="<img src="+kep+">";
+$("#bal")[0].innerHTML -="<img src="+kep+">";
+    
     this.classList.remove($("article img"));
     for (var i = 0; i < max; i++) {
         this.style.add("display:none");
@@ -72,10 +74,8 @@ var kep=this.src;
 
 function kepEltuntetesInnenCsonak() {
     var kep=this.src;
-    $("#jobb")[kep].create("<img src="+kep+">");
-    
-    $("#csonak")[kep].classList.add("eltunik");
-    $("#jobb")[kep].classList.add("megjelenik");
+    $("jobb")[0].innerHTML +="<img src="+kep+">";
+$("#csonak")[0].innerHTML -="<img src="+kep+">";
 }
 
 function veszely() {
