@@ -55,8 +55,9 @@ img {
     width: 50px;
 }
 .kiemel{
-     border: 2pt solid red;
-     cursor: grab;
+    border: 2px solid red;
+    cursor: grab;
+
 }
 
 #bal img {
