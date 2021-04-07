@@ -9,14 +9,11 @@ function $(nev) {
     return document.querySelectorAll(nev);
 }
 function init() {
-    
-    for (var i = 0; i < $("aside img").length; i++) {
-       $("aside img")[i].addEventListener("click", feladat1);
-    }
 
     for (var i = 0; i < $("aside img").length; i++) {
+        $("aside img")[i].addEventListener("click", feladat1);
         $("img")[i].addEventListener("click", kepEltuntetesInnen);
-        $("img")[i].addEventListener("click", kepEltunteteseCsonakbol);
+        $("img")[i].addEventListener("click", kepEltuntetesInnenCsonak);
     }
 
 
@@ -44,19 +41,14 @@ function feladat1() {
 }
 
 function kepEltuntetesInnen() {
-    for (var i = 0; i < max; i++) {
-        this.style.add("display:none")[i];
-        $("#csonak").add(this.img);
-    }
+    $("#bal").classList.add("eltunik");
+    $("#csonak").classList.add("megjelenik");
 
 }
 
-function kepEltunteteseCsonakbol() {
-    for (var i = 0; i < $("img").length; i++) {
-        this.style.add("display:none");
-        $("#jobb img")[i].style.remove("display:none");
-    }
-
+function kepEltuntetesInnenCsonak() {
+    $("#csonak").classList.add("eltunik");
+    $("#jobb").classList.add("megjelenik");
 }
 
 function veszely() {
