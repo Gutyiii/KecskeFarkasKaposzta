@@ -9,25 +9,28 @@ function $(nev) {
 }
 
 function init() {
-    $("#csonak div").style.backgoundImage ="kepek/csonak.png";
     for (var i = 0; i < $("aside img").length; i++) {
         $("aside img")[i].addEventListener("click", feladat1);
     }
     for (var i = 0; i < $("aside img").length; i++) {
-        $("aside img")[i].addEventListener("click", feladat2);
+        $("img")[i].addEventListener("click", kepEltuntetesInnen);
+        $("img")[i].addEventListener("click", kepEltunteteseCsonakbol);
     }
 }
-var tomb = {};
 
 function feladat1() {
+    var tomb = {};
     tomb.push(this.src);
     consol.log(tomb);
 }
 
-function feladat2() {
-    display:none;
+function kepEltuntetesInnen() {
     for (var i = 0; i < max; i++) {
-        
+        this.style.add("display:none");
+        ("article img").style.remove("display:none")
     }
 }
 
+function kepEltunteteseCsonakbol() {
+    
+}
