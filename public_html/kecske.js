@@ -1,5 +1,7 @@
 window.addEventListener("load", init);
 
+var nevek = ["Gutyina András", "Szűcs Richárd", "Hecz Klaudia"];
+
 function ID(nev) {
     return document.getElementById(nev);
 }
@@ -18,6 +20,10 @@ function init() {
     for (var i = 0; i < $("#bal p img").length; i++) {
         $("#bal p img")[i].addEventListener("mouseover", feladat5);
         $("#bal p img")[i].addEventListener("mouseout", feladat6);
+    }
+
+    for (var i = 0; i < nevek.length; i++) {      
+        $("footer p")[0].innerHTML += nevek[i] + " ";
     }
 }
 function feladat5() {
@@ -45,3 +51,12 @@ function kepEltuntetesInnenCsonak() {
     $("#jobb").classList.add("megjelenik");
 }
 
+function veszely() {
+    if ("#bal p:first-child" === "#bal p:nth-child(2)"){
+        alert("Nem jóóó hát megesziii!");
+    }
+}
+
+function ujNevek() {
+    this.classList.add("nevek");
+}
