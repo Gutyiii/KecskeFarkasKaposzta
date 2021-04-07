@@ -23,16 +23,16 @@ for (var i = 0; i < $("aside img").length; i++) {
         $("img")[i].addEventListener("click", kepEltunteteseCsonakbol);
     }
     
-    for (var i = 0; i < $("#tartalom1 div p").length; i++) {
+    for (var i = 0; i < $("#bal img").length; i++) {
     $("#bal  p img")[i].addEventListener("mouseon", feladat5);
       $("#bal p img")[i].addEventListener("mouseon", feladat6);    
     }
 }
 function feladat5(){
-    this.classlist.add("kiemel");
+    this.classList.add("kiemel");
 }
 function feladat6(){
-    this.classlist.remove("kiemel");
+    this.classList.remove("kiemel");
 }
 
 
@@ -49,7 +49,7 @@ function feladat1() {
 function kepEltuntetesInnen() {
     for (var i = 0; i < max; i++) {
         this.style.add("display:none");
-        ("article img").style.remove("display:none")
+        ("article img").style.remove("display:none");
     }
 }
 
