@@ -23,7 +23,7 @@ function init() {
     }
 
     for (var i = 0; i < nevek.length; i++) {      
-        $("footer p")[0].innerHTML += nevek[i] + " ";
+        $("footer p")[i].innerHTML = nevek;
     }
 }
 function feladat5() {
