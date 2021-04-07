@@ -25,12 +25,16 @@ function feladat1() {
 }
 
 function kepEltuntetesInnen() {
-    for (var i = 0; i < max; i++) {
+    for (var i = 0; i < $("img").length; i++) {
         this.style.add("display:none");
-        ("article img").style.remove("display:none")
+        $("article img")[i].style.remove("display:none");
     }
 }
 
 function kepEltunteteseCsonakbol() {
-    
+    for (var i = 0; i < $("img").length; i++) {
+        this.style.add("display:none");
+        $("#jobb img")[i].style.remove("display:none");
+    }
 }
+
