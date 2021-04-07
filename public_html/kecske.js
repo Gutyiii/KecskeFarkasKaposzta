@@ -51,3 +51,8 @@ function kepEltunteteseCsonakbol() {
 
 }
 
+function veszely() {
+    if ("#bal p:first-child" === "#bal p:nth-child(2)"){
+        alert("Nem jóóó hát megesziii!");
+    }
+}
