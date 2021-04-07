@@ -1,5 +1,7 @@
 window.addEventListener("load", init);
 
+var nevek = ["Gutyina András", "Szűcs Richárd", "Hecz Klaudia"];
+
 function ID(nev) {
     return document.getElementById(nev);
 }
@@ -22,6 +24,10 @@ function init() {
         $("#bal p img")[i].addEventListener("mouseover", feladat5);
         $("#bal p img")[i].addEventListener("mouseout", feladat6);
     }
+
+    for (var i = 0; i < nevek.length; i++) {      
+        $("footer p")[0].innerHTML += nevek[i] + " ";
+    }
 }
 function feladat5() {
     this.classList.add("kiemel");
@@ -32,7 +38,7 @@ function feladat6() {
 
 
 function feladat1() {
-    var tomb = {};
+    var tomb = [];
     tomb.push(this.src);
     consol.log(tomb);
 }
@@ -44,7 +50,6 @@ function kepEltuntetesInnen() {
     }
 
 }
-
 
 function kepEltunteteseCsonakbol() {
     for (var i = 0; i < $("img").length; i++) {
@@ -58,4 +63,8 @@ function veszely() {
     if ("#bal p:first-child" === "#bal p:nth-child(2)"){
         alert("Nem jóóó hát megesziii!");
     }
+}
+
+function ujNevek() {
+    this.classList.add("nevek");
 }
